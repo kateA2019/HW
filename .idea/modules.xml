@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AbstractClass/AbstractClass.iml" filepath="$PROJECT_DIR$/AbstractClass/AbstractClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AbstractPerson/AbstractPerson.iml" filepath="$PROJECT_DIR$/AbstractPerson/AbstractPerson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Phone/AbstractPhone.iml" filepath="$PROJECT_DIR$/Phone/AbstractPhone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Array/FirsArray.iml" filepath="$PROJECT_DIR$/Array/FirsArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Array/FirstArray.iml" filepath="$PROJECT_DIR$/Array/FirstArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP.iml" filepath="$PROJECT_DIR$/OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Static, Final, this/Static, Final, this.iml" filepath="$PROJECT_DIR$/Static, Final, this/Static, Final, this.iml" />
+    </modules>
+  </component>
+</project>
