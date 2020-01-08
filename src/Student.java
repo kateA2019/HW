@@ -22,7 +22,7 @@ public class Student {
         int length = String.valueOf(stdPhone).length();
         if (length == 12) {
             return stdPhone;
-        } else {return 0L;}
+        } else {return 0;}
     }
     public void getData (byte stdAge, String stdName, long stdPhone) {
         this.setStdAge(stdAge);
