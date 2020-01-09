@@ -16,13 +16,16 @@ public class Student {
         int length = String.valueOf(phone).length();
         if (length == 12) {
             this.stdPhone = phone;
-        } else {System.out.println("The phone length is incorrect"); }
+        }
     }
     public long getStdPhone() {
         int length = String.valueOf(stdPhone).length();
         if (length == 12) {
-            return stdPhone;
-        } else {return 0;}
+            System.out.println("Student phone is "+this.stdPhone); return stdPhone;
+        } else if (length < 12) {
+            System.out.println("The phone length is less than required ಠ_ಠ"); return 0;
+        } else
+            System.out.println("The phone length is more than required ಠ_ಠ"); return 0;
     }
     public void getData (byte stdAge, String stdName, long stdPhone) {
         this.setStdAge(stdAge);
@@ -30,7 +33,7 @@ public class Student {
         this.setStdPhone(stdPhone);
         System.out.println("Student name is "+stdName);
         System.out.println("Student age is "+stdAge);
-        System.out.println("Student phone is "+this.getStdPhone());
+        this.getStdPhone();
     }
 
     public void setScholarship (byte key){

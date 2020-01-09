@@ -7,5 +7,6 @@ public class main {
         karazinaStudent1.setScholarship((byte)11);
 
 
+
     }
 }
