@@ -1,4 +1,4 @@
-public class Student {
+public abstract class Student {
     private String stdName;
     private byte stdAge;
     private long stdPhone;
