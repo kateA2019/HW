@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/AbstractPerson/AbstractPerson.iml" filepath="$PROJECT_DIR$/AbstractPerson/AbstractPerson.iml" />
       <module fileurl="file://$PROJECT_DIR$/Phone/AbstractPhone.iml" filepath="$PROJECT_DIR$/Phone/AbstractPhone.iml" />
       <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collections/ArrayListDemo.iml" filepath="$PROJECT_DIR$/Collections/ArrayListDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collections/Collections.iml" filepath="$PROJECT_DIR$/Collections/Collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/Array/FirsArray.iml" filepath="$PROJECT_DIR$/Array/FirsArray.iml" />
       <module fileurl="file://$PROJECT_DIR$/Array/FirstArray.iml" filepath="$PROJECT_DIR$/Array/FirstArray.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP.iml" filepath="$PROJECT_DIR$/OOP.iml" />
