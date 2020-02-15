@@ -41,5 +41,8 @@ public class HashSetDemo {
         linkedHashSet.add("Эпсилон");
         linkedHashSet.add("Омeгa");
         System.out.println("linkedHashSet " + linkedHashSet);
+
+
+        System.out.println("hashCode " + linkedHashSet.hashCode());
     }
 }
