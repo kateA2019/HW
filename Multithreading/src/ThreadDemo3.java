@@ -1,4 +1,4 @@
-    public class ThreadDemo3 extends Thread{
+    public class ThreadDemo3 implements Runnable{
 // 1 option - implementing the Runnable interface
 //public class ThreadDemo3 implements Runnable{
 // 2 option - extending a Thread class
@@ -12,7 +12,7 @@
         public void run (){
             System.out.println("Running " +  name );
             try {
-                for (int i=4; i>0; i--){
+                for (int i=3; i>0; i--){
                     System.out.println("Thread: " + name + ", " + i);
                     // Let the thread sleep for a while.
                     Thread.sleep(50);
@@ -22,21 +22,20 @@
             }
             System.out.println("Thread " +  name + " exiting.");
         }
-        /*public void start () {
+        public void start () {    // is needed for the 1 option - implementing the Runnable interface
             System.out.println("Starting " + name);
             if (t ==null) {
                 t = new Thread (this, name);
-                System.out.println("thread  = " + t);
+                System.out.println("From start (): thread  = " + t);
                 t.start();
             }
-        }*/
+        }
         // ** MAIN **
         public static void main(String args[]) {
-            ThreadDemo3 T1 = new ThreadDemo3("Thread-1");
+            ThreadDemo3 T1 = new ThreadDemo3("First");
             T1.start();
-            ThreadDemo3 T2 = new ThreadDemo3 ("Tread-2");
+            ThreadDemo3 T2 = new ThreadDemo3 ("Second");
             T2.start();
-            //2nd example
 
             Thread thread = Thread.currentThread(); // assigning 'thread' to the current / parent thread
             // Thread.currentThread() method returns a reference to the Thread instance executing currentThread() >> the parent thread

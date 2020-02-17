@@ -11,12 +11,14 @@ public class ThreadDemo implements Runnable{
     public void run() {
         System.out.println("Inside run() function of " + t.getName());
     }
+
     // ** MAIN **
     public static void main(String args[]) {
         new ThreadDemo();
         new ThreadDemo();
         new ThreadDemo();
-            // calling start() without a Thread variable:
+
+        // 2nd example > calling start() without a Thread variable:
         for(int i=1; i<5; i++) {
             new Thread("t" + i) {
                 public void run() {
