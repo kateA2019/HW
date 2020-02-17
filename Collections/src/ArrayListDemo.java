@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 public class ArrayListDemo {
     public static void main(String[] args){
         List<String> arrayList = new ArrayList<>();
         System.out.println("Начальный размер arrayList: " + arrayList.size());
 
-        // adding elements
+            // adding elements
         System.out.println("\n 1) adding elements");
         arrayList.add("C");
         arrayList.add("A");
@@ -21,14 +22,30 @@ public class ArrayListDemo {
         System.out.println("Содержимое arrayList: " + arrayList);
         System.out.println(arrayList.get(0));
 
-        // removing elements
-        System.out.println("\n 2)removing elements");
+            // перебор элементов в цикле
+        System.out.println("\nIteration in a 'for' loop");
+        for(int i=0; i<arrayList.size(); i++){
+            System.out.print(i + " : " + arrayList.get(i) + " | ");
+        }
+            // перебор элементов в цикле
+        System.out.println("\nIteration in a 'forEach' loop");
+        for (String s:arrayList){
+            System.out.print(s + " | ");
+        }
+            // перебор элементов итератором
+        System.out.println("\nIterator");
+        for(Iterator <String> it = arrayList.listIterator(); it.hasNext();  ) {
+            String s =it.next();
+            System.out.print(s + " | ");
+        }
+            // removing elements
+        System.out.println("\n\n 2)removing elements");
         arrayList.remove("F");
         arrayList.remove(2);
         System.out.println("Размер arrayList после удаления: "  + arrayList.size());
         System.out.println("Содержимое of arrayList: " + arrayList);
 
-        // example of removeAll()
+            // example of removeAll()
         System.out.println("\n 3) removeAll()");
         arrayList.add("E");
         arrayList.add("F");
@@ -37,7 +54,7 @@ public class ArrayListDemo {
         arrayList.removeAll(removeElements);
         System.out.println("Содержимое arrayList после removeAll: " + arrayList);
 
-        // example of addAll(), clear()
+            // example of addAll(), clear()
         System.out.println("\n 4) addAll(), clear()");
         List<String> arrayList2 = List.of("1", "2");
         arrayList.add(1, "A2");
@@ -50,7 +67,7 @@ public class ArrayListDemo {
         arrayList.clear();
         System.out.println("arrayList после очистки " + arrayList);
 
-        // example of retainAll()
+            // example of retainAll()
         System.out.println("\n 5) retainAll()");
         List<String> arrayList1 = new ArrayList<>();
         List<String> arrayList3 = List.of("F", "FF", "E", "B");
@@ -69,22 +86,23 @@ public class ArrayListDemo {
         arrayList1.retainAll(arrayList3);
         System.out.println("arrayList1 after retainAll " + arrayList1);
 
-        // convert to an Array
+            // convert to an Array
         System.out.println("\n 6) convert to an Array");
         arrayList1.add("A2");
         arrayList1.add("A3");
         arrayList1.add("C2");
         arrayList1.add("D2");
-        //1 вариант
+            //1 вариант
         Object[] objectArray = arrayList1.toArray();
         System.out.println(Arrays.toString(objectArray));
-        //2 вариант
+            //2 вариант
         String[] stringArray1 = new String[arrayList1.size()];
         arrayList1.toArray(stringArray1);
         System.out.println(Arrays.toString(stringArray1));
-        //3 вариант
+            //3 вариант > сокращенный вариант 2
         String[] stringArray2 = arrayList1.toArray(new String[0]);
         System.out.println(Arrays.toString(stringArray2));
+
 
     }
 }
